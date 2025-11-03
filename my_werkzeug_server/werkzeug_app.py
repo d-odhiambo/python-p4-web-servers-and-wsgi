@@ -6,11 +6,9 @@ def application(request):
     return Response("A WSGI generated this response!")
 
 if __name__ == "__main__":
-    print("Starting the server...")  # Debug line to confirm start
     from werkzeug.serving import run_simple
     run_simple(
         hostname="localhost",
         port=5555,
         application=application
     )
-#!/usr/bin/env python3
